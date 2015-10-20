@@ -5,7 +5,38 @@ body{
 	background-image: url("../assets/img/quadcopter_silhouette_white.png");
 	background-size: fit;
 	background-color: #333;
+	position: relative;
 	display: block;
 	width: 400px;
 	height: 400px;
+}
+
+#quadImageWrapper .quadFacePowerValues{
+	float: left;
+	color: #fff;
+	display: block;
+	position: absolute;
+	font-family: Arial, Helvetica, "Sans-Serif";
+	font-size: 30pt;
+	border-bottom: 2px #fff dashed;
+}
+
+#quadImageWrapper .quadFacePowerValues#topLeft{
+	top: 15%;
+	left: 15%;
+}
+
+#quadImageWrapper .quadFacePowerValues#topRight{
+	top: 15%;
+	right: 16%;
+}
+
+#quadImageWrapper .quadFacePowerValues#bottomLeft{
+	bottom: 15%;
+	left: 15%;
+}
+
+#quadImageWrapper .quadFacePowerValues#bottomRight{
+	bottom: 15%;
+	right: 16%;
 }
