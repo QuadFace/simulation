@@ -13,6 +13,10 @@ io.on('connection',function(socket){
 	console.log('Someone connected');
 });
 
+setInterval(function(){
+	io.emit("data", 10);
+}, 1000);
+
 http.listen(3000, function(){
 	console.log("Listening on port 3000");
 });
