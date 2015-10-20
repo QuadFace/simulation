@@ -12,13 +12,9 @@ serialPort.on("open", function () {
   serialPort.on('data', function(data) {
     buffer += data;
     if (data.toString().indexOf("\n") > -1) {
-    	console.log("[" + buffer + "]");
+    	console.log(buffer);
     	buffer = "";
     };
 
-  });
-  serialPort.write("ls\n", function(err, results) {
-    console.log('err ' + err);
-    console.log('results ' + results);
   });
 });
