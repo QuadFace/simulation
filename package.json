@@ -2,5 +2,7 @@
   "name": "quadface-simulation",
   "version": "0.0.1",
   "description": "A simulation for quadface",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.10.2"
+  }
 }
